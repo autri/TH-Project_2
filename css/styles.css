@@ -25,7 +25,7 @@ header {
 
 /* Main **/
 .project-item {
-    margin: 1xem 0;
+    margin: 1em 0;
 }
 
 .project-content {
@@ -35,7 +35,6 @@ header {
     color: #3E3D3B;
     max-width: 90%;
     margin: 0 auto;
-    color: #3C3B3B;
 }
 
 h3 {
@@ -60,7 +59,7 @@ h3 {
 
 footer {
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 /* Other **/
@@ -83,7 +82,7 @@ footer {
 
 h2 {
     text-transform: uppercase;
-    padding: 50px 0 50px 0;
+    padding: 40px 0 40px 0;
     margin: 0;
     font-size: 90%;
     color: #3C3B3B;
@@ -100,7 +99,7 @@ a {
 
 /*** Layout Rules ***/
 /* Header **/
-nav a {
+.nav-header a {
     display: block;
     background-color: white;
     padding: 10px;
@@ -124,7 +123,7 @@ hr {
     left: 5%;
 }
 
-.sticky-foot a {
+.back-to-top {
     font-size: 90%;
     position: absolute;
     right: 5%;
@@ -142,3 +141,152 @@ hr {
   }
 
 /*** Media Queries ***/
+
+@media (max-width: 767px) {
+    .nav-footer {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Header */
+    .nav-header a {
+        display: inline-block;
+        background-color: inherit;
+        padding: 10px 15px;
+        margin: 0;
+    }
+
+    .profile {
+        max-width: 90%;
+        margin: 50px auto 0;
+    }
+
+    .profile img {
+        float: right;
+        width: 40%;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .profile .blurb {
+        float: left;
+        width: 60%;
+        text-align: left;
+    }
+
+    /* Main */
+
+    .project-item {
+        float: left;
+        max-width: 50%;
+        margin: .5em auto;
+    }
+
+    /* Footer */
+    footer .blurb {
+        max-width: 70%;
+    }
+    
+    .contact {
+        padding: 30px 0;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    .nav-footer {
+        font-size: 90%;
+        position: absolute;
+        right: 5%;
+        display: inline-block;
+        margin: 14.4px 0;
+        color: #3C3B3B;
+    }
+
+    .nav-footer a {
+        padding-left: 40px;
+    }
+
+    .sticky-foot {
+        padding-bottom: 50px;
+    }
+    
+
+    /* Other */
+    .blurb,
+    .contact {
+        font-size: larger;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Header */
+    .title-bar {
+        padding: 50px 0;
+        width: 90%;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    h1 {
+        float: left;
+        padding: 0;
+    }
+    .nav-header {
+        float: right;
+    }
+
+    .profile {
+        margin-top: 0;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .profile .blurb {
+        padding-right: 50px;
+    }
+
+    /* Main */
+    #portfolio {
+        padding: 60px 0;
+    }
+
+    main {
+        border: solid 20px #f9f8f8;
+    }
+
+    .main-wrapper {
+        max-width: 1024px;
+        margin: 0px auto;
+    }
+
+    .project-item {
+        width: 33%;
+    }
+
+    /* Footer */
+    .sticky-foot {
+        padding: 20px;
+    }
+
+    footer .blurb {
+        max-width: 700px;
+    }
+
+    .sticky-foot p {
+        padding: inherit;
+    }
+
+    .nav-footer {
+        padding: inherit;
+    }
+
+    /* Other */
+    .blurb,
+    .contact {
+        font-size: x-large;
+    }
+    
+    
+}
