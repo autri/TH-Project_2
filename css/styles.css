@@ -9,7 +9,7 @@
 h1 {
     margin: 0;
     padding: 1em 0;
-    color: #3C3B3B;
+    color: #554e7c;
 }
 
 .profile img {
@@ -26,12 +26,12 @@ header {
     background-color: white;
     padding: 10px;
     margin: 5px 10px;
-    
 }
 
 /*** Main ***/
+
 .project-item {
-    margin: 1em 0;
+    padding: 1em 0;
 }
 
 .project-content {
@@ -43,8 +43,13 @@ header {
     margin: 0 auto;
 }
 
+.project-content p,
 h3 {
-    font-weight: normal;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h3 {
+    font-weight: bold;
 }
 
 .project-item img {
@@ -84,11 +89,17 @@ hr {
 
 .back-to-top {
     font-size: 90%;
+    text-decoration: none;
     position: absolute;
     right: 5%;
     display: inline-block;
     margin: 14.4px 0;
     color: #3C3B3B;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #8D8C8B;
 }
 
 /*** Other ***/
@@ -105,7 +116,8 @@ footer {
 }
 
 .blurb,
-.contact {
+.contact,
+#skills {
     color: #8D8C8B;
 }
 
@@ -114,11 +126,11 @@ h2 {
     padding: 40px 0 40px 0;
     margin: 0;
     font-size: 90%;
-    color: #3C3B3B;
+    color: #554e7c;
     
 }
 
-a {
+nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
