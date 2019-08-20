@@ -186,6 +186,10 @@ nav a {
         margin: .5em auto;
     }
 
+    project-content p {
+        max-height: 48px;
+    }
+    
     /* Footer */
     footer .blurb {
         max-width: 70%;
